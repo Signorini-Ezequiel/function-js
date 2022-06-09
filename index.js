@@ -4,10 +4,10 @@ resta();
 resta(10, 3);
 
 let posne = (num="none") => {
-    if (num >= 0) {
+    if (num > 0) {
         console.log("El número es positivo");
     }
-    else if (num <= 0) {
+    else if (num < 0) {
         console.log("El número es negativo");
     }
     else {
@@ -15,6 +15,5 @@ let posne = (num="none") => {
     }
 };
 
-posne();
-posne(123);
-posne(-12);
+let valor = parent(prompt("Ingrese un número: "));
+posne(valor);
